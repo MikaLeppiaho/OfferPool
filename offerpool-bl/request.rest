@@ -1,0 +1,10 @@
+GET http://localhost:5000/api/offer
+###
+POST http://localhost:5000/api/offer/
+Content-Type: application/json
+
+{
+    "offer_header":"Teräslevyjä 100kg",
+    "offer_contact":"mika.leppiaho@gmail.com"
+}
+ 
