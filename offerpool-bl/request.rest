@@ -4,7 +4,7 @@ POST http://localhost:5000/api/offer/
 Content-Type: application/json
 
 {
-    "offer_header":"Teräslevyjä 100kg",
+    "offer_header":"Teräslevyjä 20kg",
     "offer_contact":"mika.leppiaho@gmail.com"
 }
  

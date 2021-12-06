@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -79,6 +80,7 @@ namespace offerpool_bl.Controllers
         [HttpPost]
         public async Task<ActionResult<OfferDTO>> CreateOffer(OfferDTO offerDTO)
         {
+            Console.WriteLine(offerDTO);
             Offer offer = new Offer
             {
                 offer_contact = offerDTO.offer_contact,
