@@ -8,8 +8,14 @@ export const getAllOffers = async (): Promise<OfferModel[]> => {
     return response.data;
 };
 
+export const createOffer = async (data: OfferModel): Promise<OfferModel> => {
+    const request = await axios.post(baseUrl, data);
+    return request.data;
+};
+
 const OfferService = {
     getAllOffers,
+    createOffer,
 };
 
 export default OfferService;

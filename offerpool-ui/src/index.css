@@ -13,14 +13,36 @@ code {
         monospace;
 }
 h1 {
-    color: #653239;
+    color: #262a10;
 }
+
 nav {
     background-color: #eeeeee;
     padding: 1em;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
-
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin: 10px;
+}
+input,
+label {
+    display: block;
+}
 .link {
     margin: 10px;
+}
+
+.contentCard {
+    background-color: #eeeeee;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 20em;
+    border-radius: 20px;
 }
