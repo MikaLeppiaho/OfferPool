@@ -4,7 +4,8 @@ POST http://localhost:5000/api/offer/
 Content-Type: application/json
 
 {
-    "offer_header":"Teräslevyjä 20kg",
-    "offer_contact":"mika.leppiaho@gmail.com"
+    "offer_header":"Aurinkolamppuja 200kg",
+    "offer_contact":"mika.leppiaho@gmail.com",
+    "offer_date_limit": "2021-12-06T15:06:46Z"
 }
  

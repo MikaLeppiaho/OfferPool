@@ -15,6 +15,7 @@ export default function OfferListPage(): JSX.Element {
                             key={a.offer_id}
                             header={a.offer_header}
                             contact={a.offer_contact}
+                            endDate={a.offer_date_limit}
                         />
                     );
                 })
@@ -26,5 +27,5 @@ export default function OfferListPage(): JSX.Element {
         getOffers();
     }, [getOffers]);
 
-    return <div>{list}</div>;
+    return <div className="grid gap-4 justify-center items-center">{list}</div>;
 }

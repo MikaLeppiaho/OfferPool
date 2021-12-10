@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import NavigationLink from './Components/navigationlinkcomponent';
 import HomePage from './Pages/homepage';
 import NewOfferPage from './Pages/newofferpage';
@@ -8,7 +7,7 @@ import OfferListPage from './Pages/offerlistpage';
 function App() {
     return (
         <div>
-            <nav>
+            <nav className="shadow p-4 mb-5">
                 <NavigationLink to="/" linkText="Koti" />
                 <NavigationLink to="/offerlist" linkText="Tarjouslista" />
                 <NavigationLink to="/createoffer" linkText="Uusi tarjous" />
