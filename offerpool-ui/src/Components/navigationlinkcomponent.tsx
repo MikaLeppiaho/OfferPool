@@ -8,7 +8,7 @@ interface propType {
 
 const NavigationLink: FC<propType> = ({ to, linkText }) => {
     return (
-        <Link className="link" to={to}>
+        <Link className="p-4" to={to}>
             {linkText}
         </Link>
     );

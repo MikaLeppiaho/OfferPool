@@ -3,7 +3,11 @@ import { OfferModel } from '../Models/offermodel';
 import OfferService from '../Services/offerservice';
 
 export default function NewOfferPage(): JSX.Element {
-    const [offer, setOffer] = useState({});
+    const [offer, setOffer] = useState<OfferModel>({
+        offer_contact: '',
+        offer_header: '',
+        offer_date_limit: '',
+    });
 
     const handleInputChange = (event: SyntheticEvent) => {
         const { name, value } = event.target as any;
@@ -16,7 +20,8 @@ export default function NewOfferPage(): JSX.Element {
 
     const handleSubmit = (event: SyntheticEvent) => {
         event.preventDefault();
-        OfferService.createOffer(offer as OfferModel);
+        console.log(offer);
+        // OfferService.createOffer(offer as OfferModel);
     };
 
     return (
@@ -39,6 +44,17 @@ export default function NewOfferPage(): JSX.Element {
                             type="text"
                             id="offer_contact"
                             name="offer_contact"
+                            onChange={handleInputChange}
+                        />
+                    </li>
+                    <li>
+                        <label htmlFor="offer_date_limit">
+                            Määräaika tarjoukselle
+                        </label>
+                        <input
+                            type="date"
+                            id="offer_date_limit"
+                            name="offer_date_limit"
                             onChange={handleInputChange}
                         />
                     </li>

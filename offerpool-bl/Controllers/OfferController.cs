@@ -83,7 +83,8 @@ namespace offerpool_bl.Controllers
             Offer offer = new Offer
             {
                 offer_contact = offerDTO.offer_contact,
-                offer_header = offerDTO.offer_header
+                offer_header = offerDTO.offer_header,
+                offer_date_limit = offerDTO.offer_date_limit 
             };
 
             _context.Offer.Add(offer);
@@ -121,7 +122,8 @@ namespace offerpool_bl.Controllers
         {
             offer_id = offer.offer_id,
             offer_header = offer.offer_header,
-            offer_contact = offer.offer_contact
+            offer_contact = offer.offer_contact,
+            offer_date_limit = offer.offer_date_limit
         };
     }
 }
